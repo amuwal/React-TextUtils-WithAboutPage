@@ -53,7 +53,7 @@ export default function About(props) {
             <div className={`kuro bg-${props.toggleDark} card-body d-flex flex-column align-items-start`}>
               <strong className="d-inline-block mb-2 text-warning">Copy To Clipboard</strong>
 
-              <p className={`shiro text-${props.toggleLight} card-text mb-auto`}>This tool clears the text area</p>
+              <p className={`shiro text-${props.toggleLight} card-text mb-auto`}>This tool copies the text to your clipboard</p>
               <p className='text-secondary' href="/">Backend:</p>
               <p className='text-success'><strong>navigator.clipboard.writeText(text)</strong></p>
             </div>
