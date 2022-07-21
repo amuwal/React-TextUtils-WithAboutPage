@@ -60,9 +60,9 @@ export default function About(props) {
           </div>
         </div>
     </div>
-        <div class="text-center">
+        <div className="text-center">
             <p className='text-primary'><strong>Click this button for source code</strong></p>
-        <button type="button" className="btn btn-dark border border-warning"><a className="text-warning" href="https://github.com/yorr25/React-TextUtils-WithAboutPage" target="_blank"> Source code</a></button>
+        <button type="button" className="btn btn-dark border border-warning"><a className="text-warning" href="https://github.com/yorr25/React-TextUtils-WithAboutPage" target="_blank" rel="noopener noreferrer"> Source code</a></button>
         </div>
 
     </div>

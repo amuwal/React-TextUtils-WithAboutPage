@@ -30,6 +30,10 @@ export default function Textform(props) {
         // alert("Copied Successfully")
 
     }
+    function charCount(text){
+        let char = text.replace(/\s/g,'')
+        return char.length
+    }
     
     const handleOnChange = (event)=>{
         setText(event.target.value)
@@ -48,7 +52,7 @@ export default function Textform(props) {
      <button disabled={text.length===0} className="my-3 mx-2 btn btn-dark border border-light" onClick={handleClear}>Clear Area</button>
      <button disabled={text.length===0} className="my-3 mx-2 btn btn-dark border border-light" onClick={handleCopy}>{copyStatus}</button>
      <h1 className='text-warning'>Your Text Summary:</h1>
-     <p id="summary" className={`${props.summaryClasses}`}>{text.split(/\s+/).filter((element)=>{return element.length!==0}).length} words and {text.filter((element)=>{return element.length!==0}).length} characters</p>
+     <p id="summary" className={`${props.summaryClasses}`}>{text.split(/\s+/).filter((element)=>{return element.length!==0}).length} words and {charCount(text)} characters</p>
      <p className={`${props.summaryClasses}`}>{0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length} Minute read </p>
     </div>
   )
